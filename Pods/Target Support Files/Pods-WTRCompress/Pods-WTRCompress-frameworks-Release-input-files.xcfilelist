@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-WTRCompress/Pods-WTRCompress-frameworks.sh
+${BUILT_PRODUCTS_DIR}/LzmaSDK-ObjC/LzmaSDK_ObjC.framework
+${BUILT_PRODUCTS_DIR}/UnrarKit/UnrarKit.framework

@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43982224468BCEAA23E030B7 /* Pods_WTRCompress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDFCB8CF3AAD15E489D5C007 /* Pods_WTRCompress.framework */; };
+		D2C9A7D223500171000A56A3 /* WTRCompress.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C9A7C823500171000A56A3 /* WTRCompress.m */; };
+		D2C9A7D323500171000A56A3 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = D2C9A7CA23500171000A56A3 /* unzip.c */; };
+		D2C9A7D423500171000A56A3 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = D2C9A7CB23500171000A56A3 /* zip.c */; };
+		D2C9A7D523500171000A56A3 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = D2C9A7CC23500171000A56A3 /* ioapi.c */; };
+		D2F3039A234F31E500BCB97B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F30399234F31E500BCB97B /* AppDelegate.m */; };
+		D2F3039D234F31E500BCB97B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F3039C234F31E500BCB97B /* SceneDelegate.m */; };
+		D2F303A0234F31E500BCB97B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F3039F234F31E500BCB97B /* ViewController.m */; };
+		D2F303A3234F31E500BCB97B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F303A1234F31E500BCB97B /* Main.storyboard */; };
+		D2F303A5234F31E600BCB97B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2F303A4234F31E600BCB97B /* Assets.xcassets */; };
+		D2F303A8234F31E600BCB97B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F303A6234F31E600BCB97B /* LaunchScreen.storyboard */; };
+		D2F303AB234F31E600BCB97B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F303AA234F31E600BCB97B /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		28DBDEA4A0369581B809379D /* Pods-WTRCompress.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTRCompress.release.xcconfig"; path = "Target Support Files/Pods-WTRCompress/Pods-WTRCompress.release.xcconfig"; sourceTree = "<group>"; };
+		BC17D2FD95982CC1163F3E75 /* Pods-WTRCompress.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTRCompress.debug.xcconfig"; path = "Target Support Files/Pods-WTRCompress/Pods-WTRCompress.debug.xcconfig"; sourceTree = "<group>"; };
+		D2C9A7C823500171000A56A3 /* WTRCompress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTRCompress.m; sourceTree = "<group>"; };
+		D2C9A7CA23500171000A56A3 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		D2C9A7CB23500171000A56A3 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		D2C9A7CC23500171000A56A3 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		D2C9A7CD23500171000A56A3 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		D2C9A7CE23500171000A56A3 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		D2C9A7CF23500171000A56A3 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		D2C9A7D023500171000A56A3 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		D2C9A7D123500171000A56A3 /* WTRCompress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTRCompress.h; sourceTree = "<group>"; };
+		D2F30395234F31E500BCB97B /* WTRCompress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WTRCompress.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2F30398234F31E500BCB97B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D2F30399234F31E500BCB97B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D2F3039B234F31E500BCB97B /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		D2F3039C234F31E500BCB97B /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		D2F3039E234F31E500BCB97B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D2F3039F234F31E500BCB97B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D2F303A2234F31E500BCB97B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D2F303A4234F31E600BCB97B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2F303A7234F31E600BCB97B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D2F303A9234F31E600BCB97B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2F303AA234F31E600BCB97B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DDFCB8CF3AAD15E489D5C007 /* Pods_WTRCompress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WTRCompress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2F30392234F31E500BCB97B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43982224468BCEAA23E030B7 /* Pods_WTRCompress.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B7832AF49C285D788845661 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC17D2FD95982CC1163F3E75 /* Pods-WTRCompress.debug.xcconfig */,
+				28DBDEA4A0369581B809379D /* Pods-WTRCompress.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B9F71577230A8576CE2CC57C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDFCB8CF3AAD15E489D5C007 /* Pods_WTRCompress.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2C9A7C723500171000A56A3 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				D2C9A7D123500171000A56A3 /* WTRCompress.h */,
+				D2C9A7C823500171000A56A3 /* WTRCompress.m */,
+				D2C9A7C923500171000A56A3 /* unzip101e */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		D2C9A7C923500171000A56A3 /* unzip101e */ = {
+			isa = PBXGroup;
+			children = (
+				D2C9A7CD23500171000A56A3 /* crypt.h */,
+				D2C9A7CC23500171000A56A3 /* ioapi.c */,
+				D2C9A7D023500171000A56A3 /* ioapi.h */,
+				D2C9A7CA23500171000A56A3 /* unzip.c */,
+				D2C9A7CF23500171000A56A3 /* unzip.h */,
+				D2C9A7CB23500171000A56A3 /* zip.c */,
+				D2C9A7CE23500171000A56A3 /* zip.h */,
+			);
+			path = unzip101e;
+			sourceTree = "<group>";
+		};
+		D2F3038C234F31E500BCB97B = {
+			isa = PBXGroup;
+			children = (
+				D2C9A7C723500171000A56A3 /* src */,
+				D2F30397234F31E500BCB97B /* WTRCompress */,
+				D2F30396234F31E500BCB97B /* Products */,
+				7B7832AF49C285D788845661 /* Pods */,
+				B9F71577230A8576CE2CC57C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D2F30396234F31E500BCB97B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2F30395234F31E500BCB97B /* WTRCompress.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2F30397234F31E500BCB97B /* WTRCompress */ = {
+			isa = PBXGroup;
+			children = (
+				D2F30398234F31E500BCB97B /* AppDelegate.h */,
+				D2F30399234F31E500BCB97B /* AppDelegate.m */,
+				D2F3039B234F31E500BCB97B /* SceneDelegate.h */,
+				D2F3039C234F31E500BCB97B /* SceneDelegate.m */,
+				D2F3039E234F31E500BCB97B /* ViewController.h */,
+				D2F3039F234F31E500BCB97B /* ViewController.m */,
+				D2F303A1234F31E500BCB97B /* Main.storyboard */,
+				D2F303A4234F31E600BCB97B /* Assets.xcassets */,
+				D2F303A6234F31E600BCB97B /* LaunchScreen.storyboard */,
+				D2F303A9234F31E600BCB97B /* Info.plist */,
+				D2F303AA234F31E600BCB97B /* main.m */,
+			);
+			path = WTRCompress;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2F30394234F31E500BCB97B /* WTRCompress */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2F303AE234F31E600BCB97B /* Build configuration list for PBXNativeTarget "WTRCompress" */;
+			buildPhases = (
+				53D0CAD0EEA37DF28AC9023C /* [CP] Check Pods Manifest.lock */,
+				D2F30391234F31E500BCB97B /* Sources */,
+				D2F30392234F31E500BCB97B /* Frameworks */,
+				D2F30393234F31E500BCB97B /* Resources */,
+				68C63AC4B09B689411F0B193 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WTRCompress;
+			productName = WTRCompress;
+			productReference = D2F30395234F31E500BCB97B /* WTRCompress.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2F3038D234F31E500BCB97B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = wfz;
+				TargetAttributes = {
+					D2F30394234F31E500BCB97B = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = D2F30390234F31E500BCB97B /* Build configuration list for PBXProject "WTRCompress" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D2F3038C234F31E500BCB97B;
+			productRefGroup = D2F30396234F31E500BCB97B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2F30394234F31E500BCB97B /* WTRCompress */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2F30393234F31E500BCB97B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2F303A8234F31E600BCB97B /* LaunchScreen.storyboard in Resources */,
+				D2F303A5234F31E600BCB97B /* Assets.xcassets in Resources */,
+				D2F303A3234F31E500BCB97B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		53D0CAD0EEA37DF28AC9023C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WTRCompress-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68C63AC4B09B689411F0B193 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WTRCompress/Pods-WTRCompress-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WTRCompress/Pods-WTRCompress-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WTRCompress/Pods-WTRCompress-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2F30391234F31E500BCB97B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2C9A7D323500171000A56A3 /* unzip.c in Sources */,
+				D2C9A7D223500171000A56A3 /* WTRCompress.m in Sources */,
+				D2C9A7D523500171000A56A3 /* ioapi.c in Sources */,
+				D2F303A0234F31E500BCB97B /* ViewController.m in Sources */,
+				D2F3039A234F31E500BCB97B /* AppDelegate.m in Sources */,
+				D2C9A7D423500171000A56A3 /* zip.c in Sources */,
+				D2F303AB234F31E600BCB97B /* main.m in Sources */,
+				D2F3039D234F31E500BCB97B /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D2F303A1234F31E500BCB97B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2F303A2234F31E500BCB97B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D2F303A6234F31E600BCB97B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2F303A7234F31E600BCB97B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D2F303AC234F31E600BCB97B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D2F303AD234F31E600BCB97B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D2F303AF234F31E600BCB97B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC17D2FD95982CC1163F3E75 /* Pods-WTRCompress.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ED6U86NK2U;
+				INFOPLIST_FILE = WTRCompress/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wfz.WTRCompress;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D2F303B0234F31E600BCB97B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28DBDEA4A0369581B809379D /* Pods-WTRCompress.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ED6U86NK2U;
+				INFOPLIST_FILE = WTRCompress/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wfz.WTRCompress;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2F30390234F31E500BCB97B /* Build configuration list for PBXProject "WTRCompress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2F303AC234F31E600BCB97B /* Debug */,
+				D2F303AD234F31E600BCB97B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2F303AE234F31E600BCB97B /* Build configuration list for PBXNativeTarget "WTRCompress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2F303AF234F31E600BCB97B /* Debug */,
+				D2F303B0234F31E600BCB97B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D2F3038D234F31E500BCB97B /* Project object */;
+}

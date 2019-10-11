@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "42DEBDEA-5D29-40DD-B3FE-7ECE2922E0DE"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B52E17BF-A452-4FBC-995D-1D30392B9B64"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/SSZipArchive/SSZipArchive/SSZipArchive.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "783"
+            endingLineNumber = "783"
+            landmarkName = "+createZipFileAtPath:withContentsOfDirectory:keepParentDirectory:compressionLevel:password:AES:progressHandler:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "63C302BF-B95F-4933-A69F-8C2B336DBC6A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/SSZipArchive/SSZipArchive/SSZipArchive.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "818"
+            endingLineNumber = "818"
+            landmarkName = "-writeFolderAtPath:withFolderName:withPassword:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "63C302BF-B95F-4933-A69F-8C2B336DBC6A - 6245b2aa480aceb2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[SSZipArchive writeFolderAtPath:withFolderName:withPassword:]"
+                  moduleName = "SSZipArchive"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wfz/Desktop/GitWTR/WTRCompress/Pods/SSZipArchive/SSZipArchive/SSZipArchive.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "818"
+                  endingLineNumber = "818"
+                  offsetFromSymbolStart = "121">
+               </Location>
+               <Location
+                  uuid = "63C302BF-B95F-4933-A69F-8C2B336DBC6A - 6245b2aa480aceb2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[SSZipArchive writeFolderAtPath:withFolderName:withPassword:]"
+                  moduleName = "SSZipArchive"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wfz/Desktop/GitWTR/WTRCompress/Pods/SSZipArchive/SSZipArchive/SSZipArchive.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "818"
+                  endingLineNumber = "818"
+                  offsetFromSymbolStart = "151">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
