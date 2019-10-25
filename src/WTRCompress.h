@@ -29,6 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 /*
  7z解压  .7z
  异步线程
+ rets 返回-3是需要密码 返回1成功
  */
 + (void)un7z:(NSString *)fPath toPath:(NSString *)toPath password:(nullable NSString *)password progress:(void (^ __nullable)(float progress))pcb completion:(void (^ __nullable)(int rets))completion;
 
@@ -46,6 +47,10 @@ NS_ASSUME_NONNULL_BEGIN
  paths 数组内可以是文件夹路径也可以是文件路径
  */
 + (void)create7zFileAtPath:(NSString *)fPath withFilesAtPaths:(NSArray<NSString *> *)paths withPassword:(nullable NSString *)password progress:(void (^ __nullable)(float progress))pcb  completion:(void (^ __nullable)(int rets))completion;
+
+
+#pragma mark 字符串解码
++(NSString *)deCodeStrWithData:(NSData *)da;
 
 @end
 

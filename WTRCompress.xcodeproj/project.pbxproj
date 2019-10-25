@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		43982224468BCEAA23E030B7 /* Pods_WTRCompress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDFCB8CF3AAD15E489D5C007 /* Pods_WTRCompress.framework */; };
+		D2317C3F2362BA6A005B3A52 /* WTRCompress.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D2317C3E2362BA6A005B3A52 /* WTRCompress.podspec */; };
 		D2C9A7D223500171000A56A3 /* WTRCompress.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C9A7C823500171000A56A3 /* WTRCompress.m */; };
 		D2C9A7D323500171000A56A3 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = D2C9A7CA23500171000A56A3 /* unzip.c */; };
 		D2C9A7D423500171000A56A3 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = D2C9A7CB23500171000A56A3 /* zip.c */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		28DBDEA4A0369581B809379D /* Pods-WTRCompress.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTRCompress.release.xcconfig"; path = "Target Support Files/Pods-WTRCompress/Pods-WTRCompress.release.xcconfig"; sourceTree = "<group>"; };
 		BC17D2FD95982CC1163F3E75 /* Pods-WTRCompress.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTRCompress.debug.xcconfig"; path = "Target Support Files/Pods-WTRCompress/Pods-WTRCompress.debug.xcconfig"; sourceTree = "<group>"; };
+		D2317C3E2362BA6A005B3A52 /* WTRCompress.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WTRCompress.podspec; sourceTree = "<group>"; };
 		D2C9A7C823500171000A56A3 /* WTRCompress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTRCompress.m; sourceTree = "<group>"; };
 		D2C9A7CA23500171000A56A3 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
 		D2C9A7CB23500171000A56A3 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 		D2F3038C234F31E500BCB97B = {
 			isa = PBXGroup;
 			children = (
+				D2317C3E2362BA6A005B3A52 /* WTRCompress.podspec */,
 				D2C9A7C723500171000A56A3 /* src */,
 				D2F30397234F31E500BCB97B /* WTRCompress */,
 				D2F30396234F31E500BCB97B /* Products */,
@@ -197,6 +200,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2317C3F2362BA6A005B3A52 /* WTRCompress.podspec in Resources */,
 				D2F303A8234F31E600BCB97B /* LaunchScreen.storyboard in Resources */,
 				D2F303A5234F31E600BCB97B /* Assets.xcassets in Resources */,
 				D2F303A3234F31E500BCB97B /* Main.storyboard in Resources */,

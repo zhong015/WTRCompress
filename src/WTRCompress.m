@@ -10,9 +10,9 @@
 #import "zip.h"
 #import "unzip.h"
 
-#import <UnrarKit/UnrarKit.h>
-#import <LzmaSDK_ObjC/LzmaSDKObjCReader.h>
-#import <LzmaSDK_ObjC/LzmaSDKObjCWriter.h>
+#import "UnrarKit.h"
+#import "LzmaSDKObjCReader.h"
+#import "LzmaSDKObjCWriter.h"
 
 @interface WTRCompress ()<LzmaSDKObjCReaderDelegate,LzmaSDKObjCWriterDelegate>
 
@@ -225,7 +225,7 @@
 
         NSData *fnameda=[NSData dataWithBytes:filename length:fileInfo.size_filename];
         // check if it contains directory
-        NSString * strPath = [self deCodeStrWithData:fnameda];//[NSString stringWithUTF8String:filename];
+        NSString * strPath = [WTRCompress deCodeStrWithData:fnameda];//[NSString stringWithUTF8String:filename];
         BOOL isDirectory = NO;
         if( filename[fileInfo.size_filename-1]=='/' || filename[fileInfo.size_filename-1]=='\\')
             isDirectory = YES;
@@ -293,7 +293,7 @@
 }
 
 #pragma mark 字符串解码
--(NSString *)deCodeStrWithData:(NSData *)da
++(NSString *)deCodeStrWithData:(NSData *)da
 {
     NSString *retstr=[[NSString alloc] initWithData:da encoding:NSUTF8StringEncoding];
     if (!retstr) {
@@ -449,6 +449,10 @@
     NSError * error = nil;
     if (![_lzreader open:&error]) {
         NSLog(@"Open error: %@", error);
+        if (self.completion) {
+            self.completion(-3);
+            return;
+        }
     }
     NSLog(@"Open error: %@", _lzreader.lastError);
 
@@ -489,6 +493,15 @@
 {
     //解压7z进度
     NSLog(@"extractProgress:%.2f",progress);
+    if (isnan(progress)) {
+        return;
+    }
+    if (progress<0.01) {
+        return;
+    }
+    if (progress>0.99) {
+        return;
+    }
     if (self.pcb) {
         self.pcb(progress);
     }
@@ -534,10 +547,10 @@
     NSError * error = nil;
     [_lzwriter open:&error];
 
-    [_lzwriter write];
+    BOOL ret=[_lzwriter write];
 
     if (self.completion) {
-        if (error) {
+        if (!ret||error) {
             NSLog(@"%@",error);
             self.completion(0);
         }else{
@@ -549,6 +562,15 @@
 {
     //压缩7z进度
     NSLog(@"writeProgress:%.2f",progress);
+    if (isnan(progress)) {
+        return;
+    }
+    if (progress<0.01) {
+        return;
+    }
+    if (progress>0.99) {
+        return;
+    }
     if (self.pcb) {
         self.pcb(progress);
     }
