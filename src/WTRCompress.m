@@ -296,39 +296,32 @@
 +(NSString *)deCodeStrWithData:(NSData *)da
 {
     NSString *retstr=[[NSString alloc] initWithData:da encoding:NSUTF8StringEncoding];
-    if (!retstr) {
-        NSStringEncoding enc = CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_18030_2000);
-        retstr = [[NSString alloc] initWithData:da encoding:enc];
+    if (retstr) {
+        return retstr;
     }
-    if (!retstr) {
-        NSStringEncoding enc = CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_2312_80);
-        retstr = [[NSString alloc] initWithData:da encoding:enc];
+    NSStringEncoding enc = CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_18030_2000);
+    retstr = [[NSString alloc] initWithData:da encoding:enc];
+    if (retstr) {
+        return retstr;
     }
-    if (!retstr) {
-        NSStringEncoding enc = CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGBK_95);
-        retstr = [[NSString alloc] initWithData:da encoding:enc];
+    enc = CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_2312_80);
+    retstr = [[NSString alloc] initWithData:da encoding:enc];
+    if (retstr) {
+        return retstr;
     }
-    if (!retstr) {
-        NSStringEncoding enc = CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingDOSChineseSimplif);
-        retstr = [[NSString alloc] initWithData:da encoding:enc];
-    }
-    if (!retstr) {
-        NSStringEncoding enc = CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingMacChineseSimp);
-        retstr = [[NSString alloc] initWithData:da encoding:enc];
+    enc = CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGBK_95);
+    retstr = [[NSString alloc] initWithData:da encoding:enc];
+    if (retstr) {
+        return retstr;
     }
     
-    if (!retstr) {
-        NSStringEncoding enc = CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingDOSChineseTrad);
-        retstr = [[NSString alloc] initWithData:da encoding:enc];
+    //系统判断
+    NSString *convertedString=nil;
+    [NSString stringEncodingForData:da encodingOptions:nil convertedString:&convertedString usedLossyConversion:nil];
+    if (convertedString&&convertedString.length>0) {
+        return convertedString;
     }
-    if (!retstr) {
-        NSStringEncoding enc = CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingISO_2022_CN_EXT);
-        retstr = [[NSString alloc] initWithData:da encoding:enc];
-    }
-    if (!retstr) {
-        NSStringEncoding enc = CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingISO_2022_CN);
-        retstr = [[NSString alloc] initWithData:da encoding:enc];
-    }
+    
     //判断BOM
     /*
      Unicode
@@ -338,30 +331,10 @@
 
      　　在UTF-8带BOM的版本中，BOM为EF BB BF。
      */
-    if (!retstr) {
-        //这里会自动判断 BOM Unicode
-        retstr = [[NSString alloc] initWithData:da encoding:NSUnicodeStringEncoding];;
-    }
     
-    if (!retstr) {
-        NSStringEncoding enc = CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingHZ_GB_2312);
-        retstr = [[NSString alloc] initWithData:da encoding:enc];
-    }
-    if (!retstr) {
-        NSStringEncoding enc = CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingEUC_CN);
-        retstr = [[NSString alloc] initWithData:da encoding:enc];
-    }
-    if (!retstr) {
-        NSStringEncoding enc = CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingBig5);
-        retstr = [[NSString alloc] initWithData:da encoding:enc];
-    }
-    if (!retstr) {
-        NSStringEncoding enc = CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingUnicode);
-        retstr = [[NSString alloc] initWithData:da encoding:enc];
-    }
-    if (!retstr) {
-        retstr = [[NSString alloc] initWithData:da encoding:NSUTF16StringEncoding];
-    }
+    //这里会自动判断 BOM Unicode
+    retstr=[[NSString alloc] initWithData:da encoding:NSUnicodeStringEncoding];
+    
     return retstr;
 }
 

@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "WTRCompress"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "压缩解压集合"
 
   s.homepage     = "https://github.com/zhong015/WTRCompress.git"
